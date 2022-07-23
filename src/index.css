@@ -37,18 +37,51 @@ a:hover {
 }
 
 header {
-  /* background: var(--primary); */
+  padding: 20px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background-image: url("./assets/images/cover/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-position: 80%;
+  z-index: 9999;
 }
 
 header a {
   color: var(--light);
   background-color: rgb(78, 74, 74);
   padding: 5px;
+  text-decoration: none;
+}
+
+header nav {
+  margin: 7px 0;
+  
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item{
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-decoration: none;
+  color: var(--light);
+  background-color: rgb(78, 74, 74);
+  margin: 10px;
+
 }
 
 .app-container {
@@ -67,34 +100,35 @@ header a {
 .about-container {
   background-color: var(--darker);
   color: var(--light);
-  width: 80%;
+  width: 70%;
+  height: 45vh;
+  margin: 30px;
+  padding: 40px
 }
+
 footer {
-  /* background-image: url("./assets/images/cover/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; */
-  /* background-position: 80%; */
-  background-color:#C72C41;
-}
-.footer-component {
   width: 100%;
   padding: 40px 35px;
-  display:flex;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: auto;
-  }
+  background-image: url("./assets/images/cover/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-position: 80%;
+}
 
- .footer-text{
+footer p {
   color: var(--light);
   background-color: rgb(78, 74, 74);
-  padding: 5px;
- }
-
-@media screen and (max-width: 980px){
-
-header {
-  position: relative;
+  padding: 5px; 
 }
+
+@media screen and (max-width: 980px) {
+
+  header {
+    position: relative;
+  }
 }
