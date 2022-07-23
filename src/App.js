@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Footer from './components/Footer'
 import Portfolio from "./components/Portfolio";
+import ContactForm from './components/ContactForm';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         setCurrentSection={setCurrentSection}
         currentSection={currentSection}></Nav>
       <main>
+      <ContactForm></ContactForm>
         <Portfolio></Portfolio>
         <About></About>
       </main>
