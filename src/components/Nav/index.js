@@ -1,38 +1,33 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from 'react';
 
 function Nav(props) {
+  
   const {
-    sections = [],
     setCurrentSection,
     currentSection,
   } = props;
-
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentSection.name);
-  }, [currentSection]);
 
   return (
     <header>
       <h2>
         <a style={{ textDecoration: 'none' }} href="/">
-          <span role="img" aria-label="camera"> 📸</span> Jenna Saikaly
+            Jenna Saikaly
         </a>
       </h2>
       <nav>
         <ul className="nav-list">
-          {sections.map((section) => (
-            <li className={`nav-item ${currentSection.name === section.name && 'navActive'
-              }`} key={section.name}>
-              <span
-                onClick={() => {
-                  setCurrentSection(section)
-                }}
-              >
-                {capitalizeFirstLetter(section.name)}
-              </span>
-            </li>
-          ))}
+        <li className={currentSection === "About" ? "nav-item navActive" : "nav-item"}>
+					<span onClick={() => setCurrentSection("About") }>About Me</span>
+				</li>
+        <li className={currentSection === "Portfolio" ? "nav-item navActive" : "nav-item"}>
+					<span onClick={() => setCurrentSection ("Portfolio")}>Portfolio</span>
+				</li>
+        <li className={currentSection === "Contact" ? "nav-item navActive" : "nav-item"}>
+        <span onClick={() => setCurrentSection("Contact")}>Contact</span>
+				</li>
+        <li className={currentSection === "Resume" ? "nav-item navActive" : "nav-item"}>
+					<span onClick={() => setCurrentSection("Resume")}>Résumé</span>
+				</li>
         </ul>
       </nav>
     </header>

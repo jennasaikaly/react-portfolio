@@ -6,29 +6,44 @@ import Footer from './components/Footer'
 import Portfolio from "./components/Portfolio";
 import ContactForm from './components/ContactForm';
 
-
-
 function App() {
 
-  const [sections] = useState([
-    { name: "About", description: "Who am I?", },
-    { name: "Portfolio", description: "View my Work", },
-    { name: "Contact", description: "Get in Touch" },
-    { name: "Resume", description: "My Credentials" },
-  ]);
+  
+  // const [sections] = useState([
+  //   { name: "About", description: "Who am I?", },
+  //   { name: "Portfolio", description: "View my Work", },
+  //   { name: "Contact", description: "Get in Touch" },
+  //   { name: "Resume", description: "My Credentials" },
+  // ]);
 
-  const [currentSection, setCurrentSection] = useState(sections[0]);
-
+  const [currentSection, setCurrentSection] = useState("About");
+  function changePage(page) {
+    if (page === "About") {
+      return <About />
+    }
+    if (page === "Portfolio") {
+      return <Portfolio />
+    }
+    if (page === "Contact") {
+      return <ContactForm />
+    }
+    //  if (page === "Resume"){
+    //   return <Resume />
+    //  }
+  }
   return (
-    <div className = "app-container">
-        <Nav 
-        sections={sections}
+    <div className="app-container">
+      <Nav
+        // sections={sections}
         setCurrentSection={setCurrentSection}
-        currentSection={currentSection}></Nav>
+        currentSection={currentSection}
+      >
+
+      </Nav>
       <main>
-      <ContactForm></ContactForm>
-        <Portfolio></Portfolio>
-        <About></About>
+
+        {changePage(currentSection)}
+
       </main>
       <Footer></Footer>
     </div>
