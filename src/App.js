@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
 import Footer from './components/Footer'
-import Gallery from "./components/Gallery";
+import Portfolio from "./components/Portfolio";
 
 
 
@@ -25,7 +25,7 @@ function App() {
         setCurrentSection={setCurrentSection}
         currentSection={currentSection}></Nav>
       <main>
-        <Gallery></Gallery>
+        <Portfolio></Portfolio>
         <About></About>
       </main>
       <Footer></Footer>
