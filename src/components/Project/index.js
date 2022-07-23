@@ -8,62 +8,68 @@ const Project = () => {
     const projects = [
         {
             name: 'Portfolio',
-            image: '0.jpg',
-            github: 'https://jennasaikaly.github.io/portfolio/',
-            deployed: 'https://github.com/jennasaikaly/portfolio.git'
+            image: 'first-portfolio.jpg',
+            github: 'https://github.com/jennasaikaly/portfolio.git',
+            deployed: 'https://jennasaikaly.github.io/portfolio/'
         },
         {
             name: 'Password Generator',
-            image: '1.png',
+            image: 'password-generator.png',
             github: 'https://github.com/jennasaikaly/password-generator.git',
             deployed: 'https://jennasaikaly.github.io/password-generator/'
         },
         {
             name: 'Open Fields',
-            image: '2.jpg',
+            image: 'open-fields.jpg',
             github: 'https://github.com/ShaunSully88/Open-Fields',
             deployed: 'https://shaunsully88.github.io/Open-Fields/'
         },
         {
             name: 'Weather Dashboard',
-            image: '3.jpg',
+            image: 'weather-dashboard.jpg',
             github: 'https://github.com/jennasaikaly/weather-dashboard.git',
             deployed: 'https://jennasaikaly.github.io/weather-dashboard/'
         },
         {
             name: 'Home Garden Manager',
-            image: '4.jpg',
+            image: 'home-garden-manager.jpg',
             github: 'https://github.com/SierraDavis2000/Home-Garden-Manager',
             deployed: 'https://warm-harbor-34559.herokuapp.com/'
         },
         {
             name: 'Budget Tracker',
-            image: '5.jpg',
+            image: 'budget-tracker.jpg',
             github: 'https://github.com/jennasaikaly/budget-tracker',
             deployed: 'https://jennasaikaly-budget-tracker.herokuapp.com/'
         },
     ];
 
     return (
-        <div>
-            <div>
+        <div className='project-container'>
                 {projects.map((project) => (
                     <div
-                        className="project-card"
+                        className="flip-card"
                         key={project.name}
                     >
-                        <div>
-                            {project.name}
+                        <div className='flip-card-inner'>
+                            <div className='flip-card-front'>
+                                <img className ="img-project" src={require('../../assets/images/projects/' + project.image)}
+                                    alt={project.name}>
+                                </img>
+                            </div>
+                            <div className='flip-card-back'>
+                                <h1>{project.name}</h1>
+                                <a href={project.github}>
+                                <img className = "img-github"src={require('../../assets/images/github-mark/PNG/GitHub-Mark-64px.png')}
+                                    alt='Github'>
+                                </img>
+                                </a>
+                                <a href={project.deployed}>Deployed site</a>
+                            </div>
                         </div>
-                        <img src={require('../../assets/images/projects/' + project.image)} 
-                        
-                        alt={project.name}></img>
-                        <a href={project.github}>Github</a>
-                        <a href={project.deployed}>Deployed site</a>
                     </div>
                 ))}
-            </div>
-        </div>
+         </div>
     );
 }
 
