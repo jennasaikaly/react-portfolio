@@ -5,7 +5,7 @@ function Nav() {
         { name: "About", description: "Who am I?", },
         { name: "Portfolio", description: "View my Work", },
         { name: "Contact", description: "Get in Touch" },
-        { name: "Resume", description: "My credentials" },
+        { name: "Resume", description: "My Credentials" },
     ];
 
     return (
@@ -15,7 +15,7 @@ function Nav() {
                     <span role="img" aria-label="camera"> 📸</span> Jenna Saikaly
                 </a>
             </h2>
-            <ul className="flex-row">
+            <ul className="flex-row" style={{ listStyle: 'none' }}>
       <li className="mx-2">
         <a href="#about">
           About me
