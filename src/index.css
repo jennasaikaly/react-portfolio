@@ -81,7 +81,10 @@ header nav {
   color: var(--light);
   background-color: rgb(78, 74, 74);
   margin: 10px;
+}
 
+.navActive {
+  color: var(--secondary);
 }
 
 .app-container {
@@ -89,7 +92,7 @@ header nav {
   background-size: cover;
   background-position: center;
   min-width: 100%;
-  height: 600px;
+  /* height: 600px; */
   background-attachment: fixed;
   background-position: 80%;
   display: flex;
@@ -102,6 +105,15 @@ header nav {
   color: var(--light);
   width: 70%;
   height: 45vh;
+  margin: 30px;
+  padding: 40px
+}
+
+.gallery-container {
+  background-color: var(--darker);
+  color: var(--light);
+  width: 70%;
+  
   margin: 30px;
   padding: 40px
 }

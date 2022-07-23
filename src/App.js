@@ -1,28 +1,31 @@
-
-// import React, { useState } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
 import Footer from './components/Footer'
+import Gallery from "./components/Gallery";
 
 
 
 function App() {
 
-  // const [sections] = useState([
-  //   { name: "About", description: "Who am I?", },
-  //   { name: "Portfolio", description: "View my Work", },
-  //   { name: "Contact", description: "Get in Touch" },
-  //   { name: "Resume", description: "My Credentials" },
-  // ]);
+  const [sections] = useState([
+    { name: "About", description: "Who am I?", },
+    { name: "Portfolio", description: "View my Work", },
+    { name: "Contact", description: "Get in Touch" },
+    { name: "Resume", description: "My Credentials" },
+  ]);
 
-  // const [currentSection, setCurrentSection] = useState(sections[0]);
+  const [currentSection, setCurrentSection] = useState(sections[0]);
 
   return (
     <div className = "app-container">
-        <Nav></Nav>
+        <Nav 
+        sections={sections}
+        setCurrentSection={setCurrentSection}
+        currentSection={currentSection}></Nav>
       <main>
+        <Gallery></Gallery>
         <About></About>
       </main>
       <Footer></Footer>

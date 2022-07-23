@@ -1,17 +1,17 @@
-import React from 'react';
-// import { capitalizeFirstLetter } from '../../utils/helpers';
+import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav() {
-  const sections = [
-      { name: "About", description: "Who am I?", },
-      { name: "Portfolio", description: "View my Work", },
-      { name: "Contact", description: "Get in Touch" },
-      { name: "Resume", description: "My Credentials" },
-  ];
+function Nav(props) {
+  const {
+    sections = [],
+    setCurrentSection,
+    currentSection,
+  } = props;
 
-  function sectionSelected(name) {
-    console.log(`${name} clicked`)
-  }
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(currentSection.name);
+  }, [currentSection]);
+
   return (
     <header>
       <h2>
@@ -20,37 +20,19 @@ function Nav() {
         </a>
       </h2>
       <nav>
-        <ul className = "nav-list">
-          {/* <li>
-            <a style={{ textDecoration: 'none' }} href="#about">
-              About me
-            </a>
-          </li>
-          <li>
-            <a style={{ textDecoration: 'none' }} href="#work">
-              My Work
-            </a>
-          </li>
-          <li>
-            <a style={{ textDecoration: 'none' }} href="#contact">
-              Contact Me
-            </a>
-          </li>
-          <li>
-            <a style={{ textDecoration: 'none' }} href="#resume">
-              Resume
-            </a>
-          </li> */}
+        <ul className="nav-list">
           {sections.map((section) => (
-        <li
-          className="nav-item"
-          key={section.name}
-        >
-          <span onClick={() => sectionSelected(section.name)} >
-            {section.name}
-          </span>
-        </li>
-      ))}
+            <li className={`nav-item ${currentSection.name === section.name && 'navActive'
+              }`} key={section.name}>
+              <span
+                onClick={() => {
+                  setCurrentSection(section)
+                }}
+              >
+                {capitalizeFirstLetter(section.name)}
+              </span>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
