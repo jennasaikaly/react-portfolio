@@ -9,27 +9,27 @@
 
   ## Table of Contents 
 
-  * [Installation](#installation)
   * [Usage](#usage)
   * [Link](#link) 
   * [Screenshot](#screenshot)
    
   
-  ## Installation
-
-  There are no installation instructions.
-
   ## Usage 
 
   This project will be used by me to showcase the websites that I have built.
 
   ## Link
 
-  na
+  [Deployed Page](https://jennasaikaly.github.io/react-portfolio/)
 
   ## Screenshot
 
-  yes
+  ![image](https://user-images.githubusercontent.com/99379999/180629554-7b5005f0-7771-4764-ac48-3c16f13e91f3.png)
+  ![image](https://user-images.githubusercontent.com/99379999/180629569-aa45d474-a348-4910-96cb-7a723ce4b8f1.png)
+  ![image](https://user-images.githubusercontent.com/99379999/180629584-4eccbe7f-4273-4b66-a504-38be04c91fc6.png)
+
+
+
   
   ## Questions
 
