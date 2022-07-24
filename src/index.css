@@ -95,25 +95,17 @@ header nav {
   color: var(--secondary);
 }
 
-.app-container {
-  display: flex;
-  flex-direction: column;
- 
-}
-
 .about-container {
   background-color: var(--darker);
   color: var(--light);
   width: 70%;
-  /* height: 45vh; */
   margin: auto;
   padding: 40px;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   flex-direction:row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  ;
 }
 
 .about-container p {
@@ -128,28 +120,36 @@ header nav {
 .portfolio-container {
   background-color: var(--darker);
   color: var(--light);
-  width: 70%;
+  width: 80%;
   margin: auto;
   padding: 40px;
-  justify-content: space-evenly;
-
-  ;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
 
   .project-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+  
 .img-project {
   width: 250px;
   height: 350px;
 }
 
-
-.icon-github {
+.img-github {
   size: 50px ;
+  
 }
+.img-github:hover{
+  border: var(--secondary) solid 5px;
+  border-radius: 34px;
+}
+
 .flip-card {
   background-color: transparent;
   width: 250px;
@@ -194,8 +194,12 @@ header nav {
   color: var(--light);
   width: 70%;
   margin: auto;
-  padding: 40px;
-  display:flex;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: center;
+  align-items: flex-start;
 }
 .resume-container{
   background-color: var(--darker);
@@ -205,6 +209,8 @@ header nav {
   padding: 40px;
   display:flex;
   flex-direction: column;
+    flex-wrap: wrap;
+  
 }
 form {
   width: 40%;
@@ -231,14 +237,15 @@ input:focus {
 }
 
 textarea {
-	width: 500px;
+	width: 400px;
 	height: 120px;
 	border: 3px solid --secondary;
 	padding: 5px;
 }
-.contact {
-  margin-top: 35px;
+.contact, .email {
+  margin: 15px;
 }
+
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -300,7 +307,6 @@ border: var(--secondary) solid 5px;
 
 .img-footer {
   background-color: var(--darker);
-
 }
 footer p {
   color: var(--light);
@@ -309,9 +315,46 @@ footer p {
   text-align: center;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
 
   header {
     position: relative;
   }
+
+  .img-email{
+    margin: 10px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header {
+    justify-content: center;
+  }
+  .nav-item{
+    font-size: 2.5vw;
+    margin:3px;
+  }
+
+  .contact-container {
+    width: 90%;
+    padding: 0;
+    margin:5px;
+  }
+  .contact {
+    width:80%;
+    flex-direction: column;
+    padding:0;
+    margin:0;
+  }
+  textarea{
+    width: 270px;
+  }
+  .about-container{
+    width: 90%
+  }
+.img-avatar{
+  width:90%;
+}
 }

@@ -31,7 +31,7 @@ function Resume() {
                     <li>RESTFUL APIs</li>
                     <li>NodeJS</li>
                     <li>ExpressJS</li>
-                    <li>Model View Contruller (MVC)</li>
+                    <li>Model-View-Controller (MVC)</li>
                     <li>Progressive Web Applications (PWA)</li>
                 </ul>
 
