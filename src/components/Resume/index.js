@@ -14,7 +14,7 @@ function Resume() {
                     </a>
                 </div> </div>
             <div className='proficiencies'>
-                <h4> Summary of My Proficiencies: </h4>
+                <h4>My Proficiencies: </h4>
 
                 <h5>Front-End</h5>
                 <ul>
