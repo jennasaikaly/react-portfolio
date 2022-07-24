@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.1422a770.css",
+    "main.js": "/react-portfolio/static/js/main.8a634584.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/hero-bg.jpg": "/react-portfolio/static/media/hero-bg.046d0cd38c1f27df5e0a.jpg",
+    "static/media/first-portfolio.jpg": "/react-portfolio/static/media/first-portfolio.c588b22cc33334a5169f.jpg",
+    "static/media/weather-dashboard.jpg": "/react-portfolio/static/media/weather-dashboard.e4168a3fff12d9e78b2e.jpg",
+    "static/media/Coming-Soon-Banner_placeholder-1200x349.jpg": "/react-portfolio/static/media/Coming-Soon-Banner_placeholder-1200x349.71054de4db6d9f00c6ae.jpg",
+    "static/media/Avatar-Maker.png": "/react-portfolio/static/media/Avatar-Maker.0d1a51807e3765730546.png",
+    "static/media/home-garden-manager.jpg": "/react-portfolio/static/media/home-garden-manager.6a5da169ea74122cd908.jpg",
+    "static/media/budget-tracker.jpg": "/react-portfolio/static/media/budget-tracker.3795d91dc9db306d90c6.jpg",
+    "static/media/free-code-camp-logo-PRIMARY-2.png": "/react-portfolio/static/media/free-code-camp-logo-PRIMARY-2.5459e5c44a65afdaf8a3.png",
+    "static/media/open-fields.jpg": "/react-portfolio/static/media/open-fields.9646b7a8746dd5250537.jpg",
+    "static/media/password-generator.png": "/react-portfolio/static/media/password-generator.aa25cbf89939def02f6b.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.1422a770.css.map": "/react-portfolio/static/css/main.1422a770.css.map",
+    "main.8a634584.js.map": "/react-portfolio/static/js/main.8a634584.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1422a770.css",
+    "static/js/main.8a634584.js"
+  ]
+}
