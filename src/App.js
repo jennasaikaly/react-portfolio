@@ -5,6 +5,7 @@ import About from './components/About';
 import Footer from './components/Footer'
 import Portfolio from "./components/Portfolio";
 import ContactForm from './components/ContactForm';
+import Resume from './components/Resume';
 
 function App() {
 
@@ -27,9 +28,9 @@ function App() {
     if (page === "Contact") {
       return <ContactForm />
     }
-    //  if (page === "Resume"){
-    //   return <Resume />
-    //  }
+     if (page === "Resume"){
+      return <Resume />
+     }
   }
   return (
     <div className="app-container">

@@ -8,7 +8,7 @@ function Footer() {
             <div className='img-footer'>
             <a href="https://www.linkedin.com/in/jenna-saikaly/"><img className="img-linked-logo" src={linkedIn} alt="linked In"></img></a>
             <a href="https://github.com/jennasaikaly"><img className="img-github-logo" src={github} alt="github"></img></a>
-            <a href="https://www.freecodecamp.org/jennasaikaly"><img className="img-fcc-logo" src={FCC} alt="stack overflow"></img></a>
+            <a href="https://www.freecodecamp.org/jennasaikaly"><img className="img-fcc-logo" src={FCC} alt="free code camp"></img></a>
             </div>
             <div><p>© 2022 by Jenna Saikaly</p></div>
         </footer>

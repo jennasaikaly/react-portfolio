@@ -1,6 +1,6 @@
 :root {
   --primary: #811336;
-  --secondary: rgb(199, 44, 65);
+  --secondary: #c72c41;
   --tertiary: #EE4540;
   --light: #fafafa;
   --dark: #2D132C;
@@ -127,10 +127,13 @@ header nav {
 
 .portfolio-container {
   background-color: var(--darker);
-  /* color: var(--light); */
+  color: var(--light);
   width: 70%;
   margin: auto;
   padding: 40px;
+  justify-content: space-evenly;
+
+  ;
   }
 
   .project-container {
@@ -192,8 +195,17 @@ header nav {
   width: 70%;
   margin: auto;
   padding: 40px;
+  display:flex;
 }
-
+.resume-container{
+  background-color: var(--darker);
+  color: var(--light);
+  width: 70%;
+  margin: auto;
+  padding: 40px;
+  display:flex;
+  flex-direction: column;
+}
 form {
   width: 40%;
 }
@@ -219,12 +231,14 @@ input:focus {
 }
 
 textarea {
-	width: 600px;
+	width: 500px;
 	height: 120px;
 	border: 3px solid --secondary;
 	padding: 5px;
 }
-
+.contact {
+  margin-top: 35px;
+}
 button {
   font-size: 1rem;
   text-decoration: none;

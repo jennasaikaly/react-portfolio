@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import emailImage from '../../assets/images/logos/primary/email-13-48.png'
 
 function ContactForm() {
     //initial state is an empty string
@@ -37,7 +38,8 @@ function ContactForm() {
 
     return (
         <section className='contact-container'>
-            <h1 data-testid="h1tag">Contact me</h1>
+            <div className="contact">
+            <h1 >Contact me by Form</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
@@ -56,11 +58,14 @@ function ContactForm() {
                         </div>
                     )}
                 </div>
-
                 <button data-testid="button" type="submit">Submit</button>
-
-
             </form>
+            </div>  
+            <div className='contact'>  
+            <h1 >Or by Email</h1>
+            <a href="mailto:jen.saikaly@gmail.com"><img className="img-email" src={emailImage} alt="email"></img></a>
+            
+            </div>
         </section>
     )
 }
