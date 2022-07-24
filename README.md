@@ -20,7 +20,7 @@
 
   ## Link
 
-  na
+  [Deployed Page](https://jennasaikaly.github.io/react-portfolio/)
 
   ## Screenshot
 
