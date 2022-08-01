@@ -14,7 +14,7 @@ const Project = () => {
         },
         {
             name: 'Networking Sustainability',
-            image: 'networking-sustainability.png',
+            image: 'networking-sustainability.jpg',
             github: 'https://github.com/jennasaikaly/sustainability-event-app',
             deployed: 'https://networking-sustainability-app.herokuapp.com/'
         },
