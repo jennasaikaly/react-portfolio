@@ -13,10 +13,10 @@ const Project = () => {
             deployed: 'https://jennasaikaly.github.io/portfolio/'
         },
         {
-            name: 'Password Generator',
-            image: 'password-generator.png',
-            github: 'https://github.com/jennasaikaly/password-generator.git',
-            deployed: 'https://jennasaikaly.github.io/password-generator/'
+            name: 'Networking Sustainability',
+            image: 'networking-sustainability.png',
+            github: 'https://github.com/jennasaikaly/sustainability-event-app',
+            deployed: 'https://networking-sustainability-app.herokuapp.com/'
         },
         {
             name: 'Open Fields',
